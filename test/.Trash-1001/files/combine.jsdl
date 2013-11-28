@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsdl:JobDefinition xmlns="http://www.example.org/"
+  xmlns:jsdl="http://schemas.ggf.org/jsdl/2005/11/jsdl" 
+  xmlns:jsdl-posix="http://schemas.ggf.org/jsdl/2005/11/jsdl-posix" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<jsdl:JobDescription>
+		<jsdl:JobIdentification>
+			<jsdl:JobName>hello</jsdl:JobName>
+		</jsdl:JobIdentification>
+		<jsdl:Application>
+			<jsdl-posix:POSIXApplication>
+				<jsdl-posix:Executable>/usr/bin/perl</jsdl-posix:Executable>
+				<jsdl-posix:Argument>combine-txt.pl</jsdl-posix:Argument>
+				<jsdl-posix:Argument>CURR_LEVEL</jsdl-posix:Argument>
+				<jsdl-posix:Argument>.</jsdl-posix:Argument>
+				<jsdl-posix:Argument>tif</jsdl-posix:Argument>
+				<jsdl-posix:Argument>TILE_PX</jsdl-posix:Argument>
+				<jsdl-posix:Argument>TILE_DELTA</jsdl-posix:Argument>
+				<jsdl-posix:Argument>-90</jsdl-posix:Argument>
+				<jsdl-posix:Argument>-180</jsdl-posix:Argument>
+				<jsdl-posix:Argument>RANK</jsdl-posix:Argument>
+				<jsdl-posix:Argument>NUM_PROCS</jsdl-posix:Argument>
+				<jsdl-posix:Output>combineCURR_LEVEL_RANK.out</jsdl-posix:Output>
+				<jsdl-posix:Error>combineCURR_LEVEL_RANK.err</jsdl-posix:Error>
+			</jsdl-posix:POSIXApplication>
+		</jsdl:Application>
+		<jsdl:Resources> 
+			<jsdl:TotalResourceCount>
+				<jsdl:Exact>1</jsdl:Exact>
+			</jsdl:TotalResourceCount>
+		</jsdl:Resources>
+	</jsdl:JobDescription>
+</jsdl:JobDefinition>
+

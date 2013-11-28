@@ -1,0 +1,18 @@
+This directory contains scripts for raster layer manipulation.
+
+1. combine-txt-batch.sh: combines tile level N into levels N-1 ... N-M
+
+2. combine-txt.pl: combines tile level N into level N-1
+
+3. fmt-convert.sh converts all images in a given directory and its
+sub-directories from one format to another using ImageMagick. note that
+embedded geo-referencing data will most probably get lost in the process.
+fmt-convert-1.sh is a workhorse for the above.
+
+4. normalize-white.sh takes a directory full of indexed TIFFs, and
+converts them to RGB TIFFs, normalizing "white" to true white (255,255,255)
+in the process.
+
+5. tile-images.pl takes a set of GDAL-friendly geo-referenced images,
+and produces a PDS/WMS-friendly tile set. Arbitrary input and output SRSes
+are supported, as well, as arbitrary tile sizes and resolutions.
