@@ -20,6 +20,11 @@ Either
 
 You can browse all the files in the repository directly (without downloading) by clicking on the "programs" folder above.
 
+
+### Documentation
+
+Description, requirements, installation and usage instructions can be found in the Documentation file.
+
 ### License
 
 Copyright (c) 2013, Isak Nuhic and XLAB d.o.o.
